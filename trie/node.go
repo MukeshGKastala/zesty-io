@@ -64,7 +64,9 @@ func (n *node) insert(letters []rune) {
 		current = current.children[r]
 	}
 
-	current.word = string(letters)
+	if current.word == "" {
+		current.word = string(letters)
+	}
 	current.frequency++
 }
 
