@@ -1,6 +1,6 @@
 package trie
 
-// Implementation of Priority Queue using Heap is from go.dev: https://pkg.go.dev/container/heap?tab=doc
+// Implementation of Max-heap using Priority Queue is from go.dev: https://pkg.go.dev/container/heap?tab=doc
 // TODO(MukeshKastala): Priority Queue should be in its own package
 
 // An Item is something we manage in a priority queue.
