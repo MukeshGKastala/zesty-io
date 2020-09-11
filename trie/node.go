@@ -37,6 +37,7 @@ func (n *node) findKfrequentWords(k uint) []string {
 	words := make([]string, 0, k)
 
 	// Max-heap
+	// TODO(MukeshKastala): Optimize Priority Queue to store at most k elements
 	pq := make(PriorityQueue, 0)
 	heap.Init(&pq)
 
