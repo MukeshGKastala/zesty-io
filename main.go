@@ -77,7 +77,9 @@ func autocompleteHandler(pt *trie.Trie) http.Handler {
 
 func main() {
 	flag.Parse()
+
 	// Locally-scoped ServeMux for added security
+	// TODO(MukeshKastala): Add logging and error handling middleware - This is made easy using a HTTP web framework like gin
 	mux := http.NewServeMux()
 
 	pt := generatePrefixTree(file)
